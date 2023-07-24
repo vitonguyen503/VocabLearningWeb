@@ -1,0 +1,16 @@
+create database vocablearningweb;
+use vocablearningweb;
+
+CREATE TABLE sets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL
+);
+
+CREATE TABLE accounts (
+  id int NOT NULL AUTO_INCREMENT,
+  username varchar(50) NOT NULL,
+  password varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) 
