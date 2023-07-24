@@ -32,10 +32,31 @@
 - Tạo CSDL theo code trong file SQL
 - Giải nén code và thêm vào trong IntelliJ, chỉnh cấu hình Tomcat
 - Vào file web.xml, chỉnh sửa các biến DBurl, user, password
-- Bắt đầu chạy chương trình bằng nút Run 
+- Bắt đầu chạy chương trình bằng nút Run
 
+# 6. Demo chương trình
+- Đầu tiên, khi truy cập vào đường dẫn http://localhost:8080/VocabLearningWebsite/ thì chương trình sẽ hiển thị trang bìa với nút Login trên đó. Bấm vào nút Login sẽ chuyển đến trang đăng nhập
+![Bìa](/Bìa.png)
+- Tiếp đến là trang đăng nhập. Trang đăng nhập có 2 nút phụ là Create New Acount và Change Password để tạo tài khoản mới cũng như đổi mật khẩu.
+![Login](/Login.png)
+  - Trang tạo tài khoản mới có các trường dữ liệu là tên đăng nhập, mật khẩu và xác nhận mật khẩu. Nếu đăng ký tên đăng nhập đã tồn tại hoặc mật khẩu và phần xác nhận mật khẩu không trùng nhau hệ thống sẽ báo lỗi. Ngược lại thì tạo tài khoản và đưa ra thông báo tạo thành công.
+![Register](/createAccount.png)
+  - Trang đổi mật khẩu có các trường tài khoản, mật khẩu, mật khẩu mới và xác nhận mật khẩu mới. Nếu tài khoản và mật khẩu không tồn tại trong cơ sở dữ liệu hoặc mật khẩu mới khác phần xác nhận thì hệ thống sẽ báo lỗi. Ngược lại thì hệ thống cập nhận mật khẩu mới và đưa ra thông báo cho người dùng.
+![ChangePass](changePass.png)
+- Khi nhập vào tài khoản không đúng với trong cơ sở dữ liệu thì trang web sẽ báo lỗi. 
+![image](https://github.com/vitonguyen503/VocabLearningWeb/assets/89469683/0276a087-6228-499a-ab4a-2f6ca3fae23c)
+- Ngược lại thì sẽ chuyển đến trang chủ của hệ thống. Trang chủ hiển thị các set của người dùng, nút đăng xuất và các nút thao tác như thêm mới, sửa, xóa và học.
+![Home](homePage.png)
+  - Nút đăng xuất: thoát tài khoản hiện tại ra và trở về trang đăng nhập
+  - Phần tạo mới: hệ thống hiển thị trường tiêu dề, từ và định nghĩa. Các nút add và remove sẽ thêm và xóa cặp từ ở dưới cùng, tối thiểu luôn có 1 cặp hiển thị. Sau khi bấm tạo mới thì hệ thống sẽ thêm set vừa tạo vào trong cơ sở dữ liệu.
+    ![Add](createNewSet.png)
+  - Phần chỉnh sửa: đọc nội dung set lên để người dùng chỉnh sửa và lưu lại. Giao diện tương tự phần tạo mới
+     ![Edit](editSet.png)
+  - Nút xóa: khi bấm vào thì sẽ xóa set tương ứng khỏi cơ sở dữ liệu
+  - Nút học: hiển thị tiêu đề, từ và để định nghĩa do người dùng nhập vào. Khi người dùng bấm nút check hoặc enter thì hệ thống hiển thị thông báo đúng sai và chuyển sang câu tiếp theo, nút next và previous để chuyển sang câu tiếp theo và trước đó, nút restart để bắt đầu lại và nút finish để hoàn thành và quay lại trang chủ
+    ![Study](study.png)
+
+# 7. Lưu ý
 https://drive.google.com/file/d/1e0-5vdVFDawk9K54sMJWQD9XM5hUTLIK/view?usp=drive_link    
 Vì source code lớn hơn 25 MB nên không up lên github được, các anh/chị/thầy/cô down file ở link drive trên giúp em ạ.   
-   
-__1 chút mong muốn của em :<__  
 Chương trình này được viết trong thời gian ngắn và em cũng mới học JSP/Servlet trong thời gian làm bài tập học bổng nên giao diện và chức năng vẫn còn sơ sài. Nếu được em rất mong nhận được góp ý của các anh/chị/thầy/cô để phát triển cũng như trau dồi thêm kỹ năng của mình. Anh/chị/thầy/cô nếu được hãy góp ý cho em qua email 21012326@st.phenikaa-uni.edu.vn ạ. Em xin chân thành cảm ơn!
