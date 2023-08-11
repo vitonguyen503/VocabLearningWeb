@@ -57,6 +57,5 @@
     ![Study](study.png)
 
 # 7. Lưu ý
-https://drive.google.com/file/d/1e0-5vdVFDawk9K54sMJWQD9XM5hUTLIK/view?usp=drive_link    
-Vì source code lớn hơn 25 MB nên không up lên github được, các anh/chị/thầy/cô down file ở link drive trên giúp em ạ.   
+Code nằm ở branch master, anh/chị/thầy/cô xem bên đó giúp em ạ.  
 Chương trình này được viết trong thời gian ngắn và em cũng mới học JSP/Servlet trong thời gian làm bài tập học bổng nên giao diện và chức năng vẫn còn sơ sài. Nếu được em rất mong nhận được góp ý của các anh/chị/thầy/cô để phát triển cũng như trau dồi thêm kỹ năng của mình. Anh/chị/thầy/cô nếu được hãy góp ý cho em qua email 21012326@st.phenikaa-uni.edu.vn ạ. Em xin chân thành cảm ơn!
